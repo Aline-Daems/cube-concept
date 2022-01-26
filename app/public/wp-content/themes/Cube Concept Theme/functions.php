@@ -21,3 +21,44 @@ if (!function_exists('register_my_menu')) :
     add_action( 'after_setup_theme', 'register_my_menu' );
 
 endif;
+
+/*
+ * LOGO
+ */
+if (!function_exists('logo_image')) :
+
+
+function logo_image()
+{
+    return '<img src="http://localhost:10008/wp-content/themes/Cube Concept Theme/assets/images/logo-orange.png" alt="logo de cube concept" />';
+}
+
+endif;
+
+/*
+ * HOUSE ICON
+ */
+
+if (!function_exists('house_image')) :
+
+
+    function house_image()
+    {
+        return '<img src="http://localhost:10008/wp-content/themes/Cube Concept Theme/assets/images/house.png" alt="partie domestique" />';
+    }
+
+endif;
+
+/*
+ * HOUSE ICON
+ */
+
+if (!function_exists('industry_image')) :
+
+
+    function industry_image()
+    {
+        return '<img src="http://localhost:10008/wp-content/themes/Cube Concept Theme/assets/images/industry.png" alt="partie industrie" />';
+    }
+
+endif;

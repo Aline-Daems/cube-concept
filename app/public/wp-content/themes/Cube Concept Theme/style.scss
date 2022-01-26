@@ -1,0 +1,18 @@
+/*
+Theme Name: Cube Concept Theme
+Theme URI: https://www.Cube-Concept.be
+Author: Aline Daems
+Author URI: https://www.Cube-Concept.be
+Description: Thème en orange pour la partie domestique et bleu pour la partie industrie. Design fait sous Adobe XD.
+*/
+
+
+body{
+  background-color: #333333;
+}
+
+a{
+  text-decoration: none;
+}
+@import 'header.scss';
+@import 'home.scss';

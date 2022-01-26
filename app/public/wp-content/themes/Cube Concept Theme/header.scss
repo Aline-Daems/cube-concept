@@ -1,0 +1,26 @@
+#main-menu{
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li{
+    margin-right:15px;
+    a{
+      color:#f2F2F2;
+      text-decoration: none;
+      &:active{
+        color:#f2F2F2;
+
+      }
+    }
+  }
+
+  .logo-header{
+    img {
+      width: 10em;
+    }
+  }
+}

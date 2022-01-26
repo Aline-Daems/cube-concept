@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Cube Concept Theme
 Theme URI: https://www.Cube-Concept.be
@@ -5,12 +6,134 @@ Author: Aline Daems
 Author URI: https://www.Cube-Concept.be
 Description: Thème en orange pour la partie domestique et bleu pour la partie industrie. Design fait sous Adobe XD.
 */
-
-body{
-
-    background: #333333;
+body {
+  background-color: #333333;
 }
 
-#main-menu{
-
+a {
+  text-decoration: none;
 }
+
+#main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+#main-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+#main-menu li {
+  margin-right: 15px;
+}
+#main-menu li a {
+  color: #f2F2F2;
+  text-decoration: none;
+}
+#main-menu li a:active {
+  color: #f2F2F2;
+}
+#main-menu .logo-header img {
+  width: 10em;
+}
+
+.container-homePage {
+  display: flex;
+  padding: 10em;
+  justify-content: center;
+}
+.container-homePage .orange-bg {
+  background-color: #F27405;
+  width: 30em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.container-homePage .orange-bg .title-homePage {
+  display: none;
+}
+.container-homePage .orange-bg:hover {
+  background-color: #ee8745;
+}
+.container-homePage .orange-bg:hover .title-homePage {
+  display: initial;
+  text-decoration: none;
+  color: #f2F2F2;
+  font-weight: bold;
+}
+.container-homePage .orange-bg img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+.container-homePage .orange-bg img:hover {
+  transform: scale(1.2);
+}
+.container-homePage .blue-bg {
+  background-color: #1EC6D9;
+  width: 30em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.container-homePage .blue-bg .title-homePage {
+  display: none;
+}
+.container-homePage .blue-bg:hover {
+  background-color: #5cc3d0;
+}
+.container-homePage .blue-bg:hover .title-homePage {
+  display: initial;
+  text-decoration: none;
+  color: #f2F2F2;
+  font-weight: bold;
+}
+.container-homePage .blue-bg img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+.container-homePage .blue-bg img:hover {
+  transform: scale(1.2);
+}
+
+/*
+TABLET MEDIA QUERIES */
+@media only screen and (min-width: 800px) and (max-width: 1080px) {
+  .container-homePage .orange-bg {
+    width: 20em;
+    height: 20em;
+  }
+  .container-homePage .blue-bg {
+    width: 20em;
+    height: 20em;
+  }
+}
+/* PHONE MEDIA QUERIES */
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .container-homePage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-homePage .orange-bg {
+    width: 15em;
+    height: 15em;
+    margin-right: initial;
+    margin-bottom: 5rem;
+  }
+  .container-homePage .blue-bg {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
