@@ -4,6 +4,7 @@ get_header();
 ?>
 
 <div class="container-homePage">
+
     <a href="">
         <div class="orange-bg">
             <?php echo house_image()?>
@@ -18,4 +19,11 @@ get_header();
         </div>
 
     </a>
+    <div>
+        <div class="bottom-bar-one"></div>
+        <div class="bottom-bar-two"></div>
+    </div>
 </div>
+
+<?php get_footer();
+?>

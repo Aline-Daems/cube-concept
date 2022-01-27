@@ -1,9 +1,15 @@
+.header-body{
+  overflow-X: hidden;
+}
+
 #main-menu{
   display: flex;
   justify-content: space-between;
   ul {
     display: flex;
     list-style-type: none;
+
+    z-index: 10;
   }
 
   li{
@@ -23,4 +29,24 @@
       width: 10em;
     }
   }
+}
+
+.top-bar{
+  background-color: #474747;
+  border: 1px  solid #797878;
+  width: 3%;
+  height:77%;
+  transform: rotate(-50deg);
+  z-index: -10;
+  position: absolute;
+  margin-top: -23em;
+}
+
+/* PHONE MEDIA QUERIES */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+
+.top-bar{
+  display:none;
+}
 }

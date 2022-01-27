@@ -81,7 +81,30 @@
 }
 
 
-
+.bottom-bar-one{
+  background-color: #474747;
+  border-right: 1px solid #797878;
+  border-left: 1px solid #797878;
+  width: 3%;
+  height:77%;
+  transform: rotate(-55deg);
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom:-326px;
+}
+.bottom-bar-two{
+  background-color: #474747;
+  border-right: 1px solid #797878;
+  border-left: 1px solid #797878;
+  width: 3%;
+  height:115%;
+  transform: rotate(-55deg);
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom:-374px;
+}
 
 /*
 TABLET MEDIA QUERIES */
@@ -106,7 +129,7 @@ TABLET MEDIA QUERIES */
 
 /* PHONE MEDIA QUERIES */
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
 
   .container-homePage{
     flex-direction: column;
@@ -123,5 +146,11 @@ TABLET MEDIA QUERIES */
       width:15em;
       height:15em;
     }
+  }
+  .bottom-bar-one{
+    display:none;
+  }
+  .bottom-bar-two{
+    display:none;
   }
 }

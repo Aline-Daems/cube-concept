@@ -9,10 +9,22 @@ Description: Thème en orange pour la partie domestique et bleu pour la partie i
 
 body{
   background-color: #333333;
+  margin:0;
+  padding:0;
 }
 
 a{
   text-decoration: none;
 }
+
+*{
+  font-family: 'Cabin', sans-serif;
+  color:#f2F2F2;
+}
 @import 'header.scss';
 @import 'home.scss';
+@import 'footer.scss';
+@import 'services.scss';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');

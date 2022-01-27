@@ -8,18 +8,21 @@
     <title>Cube Concept</title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="header-body">
     <nav id="main-menu">
+
         <div class="logo-header">
             <?php  echo logo_image(); ?>
         </div>
-
+<div>
         <?php wp_nav_menu(array(
                 'theme_location' => 'main-menu',
                 'menu_id' => 'primary-menu',
             )
         );
         ?>
+        <div class="top-bar"></div>
+</div>
     </nav>
 </body>
 </html>

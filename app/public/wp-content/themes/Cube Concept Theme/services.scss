@@ -1,0 +1,109 @@
+.services-img-background{
+  background-image: url("http://localhost:10008//wp-content/themes/Cube Concept Theme/assets/images/bannière.png");
+  background-size: cover;
+  height: 30em;
+  display:flex;
+  flex-direction: column;
+  margin-top:1em;
+
+  h2{
+    margin-left: 1em;
+    font-size:2em;
+    text-transform: uppercase;
+  }
+  a{
+    background-color: #F27405;
+    border: 1px solid #f2F2F2;
+    width:8em;
+    height:2.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding:0.3em;
+
+    p{
+
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-weight: bold;
+
+    }
+  }
+}
+
+.services-description{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+
+    text-transform: uppercase;
+
+  }
+
+  p{
+    width:45em;
+  }
+
+  .services-link{
+    color:#F27405;
+    width:auto;
+    &:hover{
+      color: #908f8f;
+    }
+  }
+}
+
+.services-content{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  .services-card{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border-radius:28px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:3em;
+    margin-left:2em;
+    margin-right:2em;
+    img{
+      width:20em;
+      border-radius: 28px 28px 0 0 ;
+
+    }
+    .services-card-text{
+      background-color: #F27405;
+      width:20em;
+      height:3em;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:-0.3em;
+      border-radius:0 0 28px 28px ;
+      p{
+        font-weight: bold;
+        margin:0;
+      }
+    }
+  }
+}
+
+
+
+/* PHONE MEDIA QUERIES */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+
+  .services-description{
+    p{
+      width:20em;
+    }
+  }
+}

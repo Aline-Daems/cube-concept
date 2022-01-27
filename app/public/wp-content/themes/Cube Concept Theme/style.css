@@ -6,12 +6,24 @@ Author: Aline Daems
 Author URI: https://www.Cube-Concept.be
 Description: Thème en orange pour la partie domestique et bleu pour la partie industrie. Design fait sous Adobe XD.
 */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 body {
   background-color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+* {
+  font-family: "Cabin", sans-serif;
+  color: #f2F2F2;
+}
+
+.header-body {
+  overflow-X: hidden;
 }
 
 #main-menu {
@@ -21,6 +33,7 @@ a {
 #main-menu ul {
   display: flex;
   list-style-type: none;
+  z-index: 10;
 }
 #main-menu li {
   margin-right: 15px;
@@ -36,6 +49,23 @@ a {
   width: 10em;
 }
 
+.top-bar {
+  background-color: #474747;
+  border: 1px solid #797878;
+  width: 3%;
+  height: 77%;
+  transform: rotate(-50deg);
+  z-index: -10;
+  position: absolute;
+  margin-top: -23em;
+}
+
+/* PHONE MEDIA QUERIES */
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .top-bar {
+    display: none;
+  }
+}
 .container-homePage {
   display: flex;
   padding: 10em;
@@ -105,6 +135,32 @@ a {
   transform: scale(1.2);
 }
 
+.bottom-bar-one {
+  background-color: #474747;
+  border-right: 1px solid #797878;
+  border-left: 1px solid #797878;
+  width: 3%;
+  height: 77%;
+  transform: rotate(-55deg);
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom: -326px;
+}
+
+.bottom-bar-two {
+  background-color: #474747;
+  border-right: 1px solid #797878;
+  border-left: 1px solid #797878;
+  width: 3%;
+  height: 115%;
+  transform: rotate(-55deg);
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom: -374px;
+}
+
 /*
 TABLET MEDIA QUERIES */
 @media only screen and (min-width: 800px) and (max-width: 1080px) {
@@ -118,7 +174,7 @@ TABLET MEDIA QUERIES */
   }
 }
 /* PHONE MEDIA QUERIES */
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   .container-homePage {
     flex-direction: column;
     justify-content: center;
@@ -133,6 +189,215 @@ TABLET MEDIA QUERIES */
   .container-homePage .blue-bg {
     width: 15em;
     height: 15em;
+  }
+
+  .bottom-bar-one {
+    display: none;
+  }
+
+  .bottom-bar-two {
+    display: none;
+  }
+}
+.footer {
+  background-color: #333333;
+  border-top: 1px solid rgba(123, 123, 123, 0.56);
+  height: 10em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-image img {
+  width: 10em;
+}
+
+.news-text {
+  width: 25em;
+  margin-left: 5em;
+  color: #f2F2F2;
+  font-size: 12px;
+  padding: 1em;
+}
+
+.contact-button {
+  width: 7em;
+  height: 2em;
+  border: 1px solid #f2F2F2;
+  background-color: #727070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.contact-button p {
+  color: #f2F2F2;
+  text-decoration: none;
+}
+.contact-button:hover {
+  background-color: #494949;
+}
+
+.social-icon i {
+  color: #4267B2;
+  font-size: 40px;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 2em;
+  align-items: center;
+}
+.partners .title-partners {
+  color: #f2F2F2;
+  text-align: center;
+}
+.partners img {
+  width: 5em;
+}
+
+/*
+TABLET MEDIA QUERIES */
+@media only screen and (min-width: 800px) and (max-width: 1080px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .news-text {
+    width: 30em;
+  }
+
+  .bottom-bar-one {
+    bottom: 76px;
+  }
+
+  .bottom-bar-two {
+    bottom: -66px;
+  }
+
+  .social-icon {
+    margin-top: 2em;
+  }
+
+  .partners {
+    margin-right: 0;
+  }
+}
+/* PHONE MEDIA QUERIES */
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .social-icon {
+    margin-top: 2em;
+  }
+
+  .partners {
+    margin-right: 0;
+  }
+
+  .news-text {
+    margin-left: 0;
+  }
+}
+.services-img-background {
+  background-image: url("http://localhost:10008//wp-content/themes/Cube Concept Theme/assets/images/bannière.png");
+  background-size: cover;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.services-img-background h2 {
+  margin-left: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.services-img-background a {
+  background-color: #F27405;
+  border: 1px solid #f2F2F2;
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0.3em;
+}
+.services-img-background a p {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.services-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-description h1 {
+  text-transform: uppercase;
+}
+.services-description p {
+  width: 45em;
+}
+.services-description .services-link {
+  color: #F27405;
+  width: auto;
+}
+.services-description .services-link:hover {
+  color: #908f8f;
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.services-content .services-card {
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.services-content .services-card img {
+  width: 20em;
+  border-radius: 28px 28px 0 0;
+}
+.services-content .services-card .services-card-text {
+  background-color: #F27405;
+  width: 20em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.3em;
+  border-radius: 0 0 28px 28px;
+}
+.services-content .services-card .services-card-text p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* PHONE MEDIA QUERIES */
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .services-description p {
+    width: 20em;
   }
 }
 
